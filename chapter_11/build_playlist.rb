@@ -1,9 +1,10 @@
 # Builds playlist by creating a .m3u file. This is a modified version 
-# of what's asked in the book 
+# of what's asked in the book
 
-Dir.chdir '/Users/jessesessler/desktop/music'
+#replace username with your username 
 
-spoon_playlist = Dir['/Users/jessesessler/Music/iTunes/iTunes Music/Spoon/A Series Of Sneaks/*.mp3']
+Dir.chdir '/Users/<username>/desktop/music'
+spoon_playlist = Dir['/Users/<username>/Music/iTunes/iTunes Music/Spoon/A Series Of Sneaks/*.mp3']
 
 playlist_array = []
 spoon_playlist.each do |track|
